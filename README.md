@@ -1,2 +1,2 @@
-# aurelian2020.github.io
-My personal presentation
+# won8
+Exercitii pentru grupul de curs WON8
