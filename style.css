@@ -14,11 +14,12 @@ body {
   flex-direction: row;
 }
 #side-menu {
-  flex: 2;
+  flex: 1;
   padding-left: 12px;
+  min-width: 270px;
 }
 #main {
-  flex: 5;
+  flex: 6;
   padding-right: 12px;
 }
 #footer {
