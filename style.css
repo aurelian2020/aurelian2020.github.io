@@ -78,3 +78,13 @@ td {
 .pag h2 {
   margin-top: 0;
 }
+.motto {
+  text-align: right;
+}
+#above-menu {
+  width: 100%;
+}
+#me-photo {
+  border: 3px solid silver;
+  border-radius: 50%;
+}
