@@ -84,6 +84,20 @@ td {
 .motto {
   text-align: right;
 }
+#cd {
+  background-color: white;
+  padding: 5px 9px 5px 9px;
+  font-size: 14pt;
+  border-radius: 5px;
+}
+#wd {
+  font-weight: bold;
+  color: green;
+}
+#yr {
+  font-weight: bold;
+  color: red;
+}
 #above-menu {
   width: 100%;
 }
