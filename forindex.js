@@ -7,3 +7,4 @@ elem.innerHTML = elem_new_html;
 var m2 = document.getElementById("m2");
 m2.innerHTML = "&nbsp;";
 var pages = ["Home", "Skills", "Projects", "Languages"];
+console.log("first element of pages array is: " + pages[0]);
