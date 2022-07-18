@@ -9,26 +9,26 @@ m2.innerHTML = "&nbsp;";
 var pages = ["Home", "Skills", "Projects", "Languages"];
 console.log("first element of pages array is: " + pages[0]);
 
-function hidePage(id) {
+function hide(id) {
   console.info("hide ", id);
   document.getElementById(id).style.display = "none";
 }
 
-function showPage(id) {
+function show(id) {
   console.warn("show ", id);
   document.getElementById(id).style.display = "block";
 }
 
 function hideAllPages() {
-  hidePage("home");
-  hidePage("skills");
-  hidePage("projects");
-  hidePage("languages");
+  hide("home");
+  hide("skills");
+  hide("projects");
+  hide("languages");
 }
 
 function showHomePage() {
   hideAllPages();
-  showPage("home");
+  show("home");
   //   hidePage("skills");
   //   hidePage("projects");
   //   hidePage("languages");
@@ -41,7 +41,7 @@ function showSkillsPage() {
   //   hidePage("projects");
   //   hidePage("languages");
   hideAllPages();
-  showPage("skills");
+  show("skills");
   //   document.getElementById("home").style.display = "none";
   //   document.getElementById("projects").style.display = "none";
   //   document.getElementById("languages").style.display = "none";
@@ -54,7 +54,7 @@ function showLanguagesPage() {
   //   hidePage("skills");
   //   hidePage("projects");
   hideAllPages();
-  showPage("languages");
+  show("languages");
 }
 function showProjectsPage() {
   //   document.getElementById("home").style.display = "none";
@@ -64,6 +64,6 @@ function showProjectsPage() {
   //   hidePage("skills");
   //   hidePage("languages");
   hideAllPages();
-  showPage("projects");
+  show("projects");
 }
 showHomePage();
