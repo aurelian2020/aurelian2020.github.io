@@ -26,6 +26,8 @@ function hideAllPages() {
   hide("languages");
 }
 
+// urmatoarele patru functii nu se mai folosesc
+
 function showHomePage() {
   hideAllPages();
   show("home");
@@ -66,4 +68,11 @@ function showProjectsPage() {
   hideAllPages();
   show("projects");
 }
-showHomePage();
+
+function showPage(id) {
+  //   console.warn("please show this page ", id);
+  hideAllPages();
+  show(id);
+}
+// showHomePage();
+showPage("home");
