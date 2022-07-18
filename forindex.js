@@ -19,21 +19,30 @@ function showPage(id) {
   document.getElementById(id).style.display = "block";
 }
 
-function showHomePage() {
-  showPage("home");
+function hideAllPages() {
+  hidePage("home");
   hidePage("skills");
   hidePage("projects");
   hidePage("languages");
+}
+
+function showHomePage() {
+  hideAllPages();
+  showPage("home");
+  //   hidePage("skills");
+  //   hidePage("projects");
+  //   hidePage("languages");
   //   document.getElementById("skills").style.display = "none";
   //   document.getElementById("projects").style.display = "none";
   //   document.getElementById("languages").style.display = "none";
 }
 function showSkillsPage() {
-  //   document.getElementById("home").style.display = "none";
-  hidePage("home");
+  //   hidePage("home");
+  //   hidePage("projects");
+  //   hidePage("languages");
+  hideAllPages();
   showPage("skills");
-  hidePage("projects");
-  hidePage("languages");
+  //   document.getElementById("home").style.display = "none";
   //   document.getElementById("projects").style.display = "none";
   //   document.getElementById("languages").style.display = "none";
 }
@@ -41,18 +50,20 @@ function showLanguagesPage() {
   //   document.getElementById("home").style.display = "none";
   //   document.getElementById("skills").style.display = "none";
   //   document.getElementById("projects").style.display = "none";
-  hidePage("home");
-  hidePage("skills");
-  hidePage("projects");
+  //   hidePage("home");
+  //   hidePage("skills");
+  //   hidePage("projects");
+  hideAllPages();
   showPage("languages");
 }
 function showProjectsPage() {
   //   document.getElementById("home").style.display = "none";
   //   document.getElementById("skills").style.display = "none";
-  hidePage("home");
-  hidePage("skills");
-  showPage("projects");
-  hidePage("languages");
   //   document.getElementById("languages").style.display = "none";
+  //   hidePage("home");
+  //   hidePage("skills");
+  //   hidePage("languages");
+  hideAllPages();
+  showPage("projects");
 }
 showHomePage();
