@@ -81,7 +81,7 @@ function updateMotto(s) {
 }
 
 function mottoPage(page) {
-  return '<span class="fmotto">&#9432; Show ' + page + " page</span>";
+  return '<span class="fmotto">Show ' + page + " page</span>";
 }
 // showHomePage();
 showPage("home");
