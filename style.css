@@ -107,3 +107,7 @@ td {
 #mon {
   width: 81pt;
 }
+.fmotto {
+  color: rgb(0, 111, 22);
+  font-weight: bold;
+}

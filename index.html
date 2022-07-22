@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        var m =
+            '<span id="wd">Web Tech Enthusiast</span> since <span id="yr">2k</span>';
+    </script>
 </head>
 
 <body>
@@ -21,17 +25,21 @@
                     <td>
                         <h1>Aurelian Constantin</h1>
                         <div class="motto">
-                            <code id="cd"><span id="wd">Web Enthusiast</span> since <span id="yr">2k</span></code>
+                            <code id="cd">&nbsp;</code>
                         </div>
                     </td>
                 </tr>
             </table>
         </div>
         <ul id="top-menu-bar">
-            <li><a href="#" onClick="showPage('home')">Home</a></li>
-            <li><a href="#" onClick="showPage('skills')">Skills</a></li>
-            <li><a href="#" onClick="showPage('projects')">Projects</a></li>
-            <li><a href="#" onClick="showPage('languages')">Languages</a></li>
+            <li><a href="#" onClick="showPage('home')" onMouseOver="updateMotto(mottoPage('home'))"
+                    onMouseOut="updateMotto(m)">Home</a></li>
+            <li><a href="#" onClick="showPage('skills')" onMouseOver="updateMotto(mottoPage('skills'))"
+                    onMouseOut="updateMotto(m)">Skills</a></li>
+            <li><a href="#" onClick="showPage('projects')" onMouseOver="updateMotto(mottoPage('projects'))"
+                    onMouseOut="updateMotto(m)">Projects</a></li>
+            <li><a href="#" onClick="showPage('languages')" onMouseOver="updateMotto(mottoPage('languages'))"
+                    onMouseOut="updateMotto(m)">Languages</a></li>
         </ul>
     </header>
 

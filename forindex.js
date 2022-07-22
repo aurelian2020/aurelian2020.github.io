@@ -74,5 +74,15 @@ function showPage(id) {
   hideAllPages();
   show(id);
 }
+
+function updateMotto(s) {
+  var cd = document.getElementById("cd");
+  cd.innerHTML = s;
+}
+
+function mottoPage(page) {
+  return '<span class="fmotto">&#9432; Show ' + page + " page</span>";
+}
 // showHomePage();
 showPage("home");
+updateMotto(m);
