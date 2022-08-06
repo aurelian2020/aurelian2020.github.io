@@ -49,6 +49,12 @@ body {
   background: #fff;
   transition: 0.7s;
 }
+
+#top-menu-bar a:active {
+  color: #3a5533;
+  background: #ff0;
+}
+
 .favo {
   font-weight: bold;
   color: rgb(0, 111, 22);

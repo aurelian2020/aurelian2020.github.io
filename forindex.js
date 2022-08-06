@@ -73,6 +73,9 @@ function showPage(id) {
   //   console.warn("please show this page ", id);
   hideAllPages();
   show(id);
+  document.getElementById("menu-" + activePage).classList.remove("active");
+  document.getElementById("menu-" + id).classList.add("active");
+  activePage = id;
 }
 
 function updateMotto(s) {
@@ -84,5 +87,8 @@ function mottoPage(page) {
   return '<span class="fmotto">Show ' + page + " page</span>";
 }
 // showHomePage();
-showPage("home");
+
+var activePage = "home";
+showPage(activePage);
+
 updateMotto(m);
